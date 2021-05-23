@@ -70,7 +70,7 @@ module.exports = {
           usuario_nome: dados[0].nome
         }, process.env.JWT_KEY,
         {
-          expiresIn: "1h"
+          expiresIn: "3h"
         }
         )
 
