@@ -16,7 +16,6 @@ module.exports = {
     }
     media = Math.floor(media / numJogadores);
 
-    //res.status(200).json(jogadores);
     res
       .status(200)
       .json({

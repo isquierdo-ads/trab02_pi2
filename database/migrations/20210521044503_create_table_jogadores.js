@@ -7,7 +7,6 @@ exports.up = (knex) => {
     table.decimal("salario", 9.2).notNullable();
     table.boolean("destaque").notNullable().defaultTo(false);
 
-    // cria campo de relacionamento com a tabela marcas
     table.integer("clube_id").notNullable().unsigned();
     table
       .foreign("clube_id")
@@ -22,7 +21,6 @@ exports.up = (knex) => {
       .onDelete("restrict")
       .onUpdate("cascade");
 
-    // cria os campos created_at e updated_at
     table.timestamps(true, true);
   });
 };
