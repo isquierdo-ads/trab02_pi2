@@ -43,6 +43,14 @@ exports.seed = function (knex) {
           clube_id: 5,
           nacionalidade_id: 3,
         },
+        {
+          nome: "Bob",
+          foto: "https://i.pinimg.com/736x/86/1f/43/861f4309210600d580c216e6aeb64d77.jpg",
+          idade: 29,
+          salario: 10000,
+          clube_id: 6,
+          nacionalidade_id: 6,
+        },
       ]);
     });
 };
