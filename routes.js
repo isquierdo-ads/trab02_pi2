@@ -11,19 +11,22 @@ const PropostasController = require("./controllers/PropostasController");
 
 routes
   .get("/jogadores", JogadoresController.index)
-  .post("/jogadores", login, JogadoresController.store)
+  .post("/jogadores", login, JogadoresController.store);
 
+routes
   .get("/usuarios", UsuariosController.index)
   .post("/usuarios", UsuariosController.store)
-  .post("/login", UsuariosController.login)
+  .post("/login", UsuariosController.login);
 
+routes
   .get("/destaques", DestaquesController.index)
-  .put("/update/:id", DestaquesController.update)
+  .put("/update/:id", DestaquesController.update);
 
-  .get("/filtro/:palavra", FiltroController.index)
+routes.get("/filtro/:palavra", FiltroController.index);
 
-  .get("/estatistica", DadosEstatisticosController.index)
+routes.get("/estatistica", DadosEstatisticosController.index);
 
+routes
   .get("/propostas", PropostasController.index)
   .post("/propostas", PropostasController.store);
 

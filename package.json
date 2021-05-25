@@ -17,7 +17,7 @@
     "url": "https://github.com/isquierdo-ads/pi2_trab2/issues"
   },
   "homepage": "https://github.com/isquierdo-ads/pi2_trab2#readme",
-  "devDependencies": {
+  "dependencies": {
     "bcrypt": "^5.0.1",
     "dotenv": "^9.0.0",
     "express": "^4.17.1",
