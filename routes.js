@@ -10,8 +10,8 @@ const login = require("./middleware/login");
 const PropostasController = require("./controllers/PropostasController");
 
 routes
-  .get("/jogadores", login, JogadoresController.index)
-  .post("/jogadores", JogadoresController.store)
+  .get("/jogadores", JogadoresController.index)
+  .post("/jogadores", login, JogadoresController.store)
 
   .get("/usuarios", UsuariosController.index)
   .post("/usuarios", UsuariosController.store)

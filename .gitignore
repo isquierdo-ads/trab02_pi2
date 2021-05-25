@@ -1,3 +1,4 @@
 node_modules
 steps.txt
 DATA_CREATE.sql
+knexfile.js
