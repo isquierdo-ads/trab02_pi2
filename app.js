@@ -6,7 +6,7 @@ app.use(express.json());
 app.use(routes);
 
 app.get("/", (req, res) => {
-  res.send('<h1>FUTEBOL AVENIDA</h1>');
+  res.send('<h1 style="color: blue">FUTEBOL AVENIDA</h1>');
 });
 
 app.listen(port, () => {
