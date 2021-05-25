@@ -11,7 +11,8 @@ const PropostasController = require("./controllers/PropostasController");
 
 routes
   .get("/jogadores", JogadoresController.index)
-  .post("/jogadores", login, JogadoresController.store);
+  .post("/jogadores", login, JogadoresController.store)
+  .del("/jogadores/:id", JogadoresController.destroy);
 
 routes
   .get("/usuarios", UsuariosController.index)

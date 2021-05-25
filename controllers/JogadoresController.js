@@ -52,4 +52,19 @@ module.exports = {
       res.status(400).json({ erro: error.message });
     }
   },
+
+  async destroy(req, res) {
+    try {
+      const { id } = req.params;
+
+      const deleteHandler = await knex("jogadores").where("id", id).del();
+
+      if (!deleteHandler) {
+        throw new Error(`Não existe jogador com id ${id}`);
+      }
+      res.send(`Jogador deletado com sucesso!`);
+    } catch (e) {
+      res.status(400).json({ ok: 0, msg: `Erro ao deletar: ${e.message}` });
+    }
+  },
 };
